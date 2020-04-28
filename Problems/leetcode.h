@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <limits.h>
 #include <stack>
+#include <math.h>
 using namespace std;
 
 struct ListNode {

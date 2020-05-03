@@ -1,5 +1,9 @@
 #include "leetcode.h"
 
+
+// record the minimum price and count max profit => DP
+
+
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -7,7 +11,7 @@ public:
         int min_price = INT_MAX;
         for(int p: prices) {
             min_price = min(min_price, p);
-            max_profit = max(max_profit, p-min_price);
+            max_profit = max(max_profit, p - min_price);
         }
         return max_profit;
     }

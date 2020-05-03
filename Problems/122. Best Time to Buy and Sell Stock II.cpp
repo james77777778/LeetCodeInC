@@ -1,5 +1,9 @@
 #include "leetcode.h"
 
+
+// Use monotone increase property.
+
+
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {

@@ -1,5 +1,9 @@
 #include "leetcode.h"
 
+
+// Use isalnum to check whether the char is a valid alphanumeric
+
+
 class Solution {
 public:
     bool isPalindrome(string s) {

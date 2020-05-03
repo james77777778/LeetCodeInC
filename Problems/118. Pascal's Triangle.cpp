@@ -1,5 +1,11 @@
 #include "leetcode.h"
 
+
+// vector of vector init: 
+// pascal(r)
+// pascal[i].resize(n)
+
+
 class Solution {
 public:
     vector<vector<int>> generate(int numRows) {

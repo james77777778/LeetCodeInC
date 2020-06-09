@@ -5,6 +5,7 @@
 #include <limits.h>
 #include <stack>
 #include <queue>
+#include <algorithm>
 #include <math.h>
 using namespace std;
 

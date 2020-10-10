@@ -18,13 +18,16 @@ public:
         return res;
     }
     vector<int> topKFrequent(vector<int>& nums, int k) {
+        // frequency count
         unordered_map<int, int> m;
         for(int i=0; i<nums.size(); i++)
             m[nums[i]] ++;
+        // bucket sort: bucket[freq] = [nums, ...]
         vector<vector<int>> bucket(nums.size()+1);
         for(auto& iter: m) {
             bucket[iter.second].push_back(iter.first);
         }
+        // get top-k
         vector<int> res;
         for(int i=bucket.size()-1; i>=0 && res.size()<k; i--) {
             for(int item: bucket[i]) {
